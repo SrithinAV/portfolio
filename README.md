@@ -2,6 +2,10 @@
 
 ![portfolio-video-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2064a5e8-a391-41c6-9b01-ecf1a69b6ace)
 
+## Deployed link
+
+https://66a8dd1c3f3c71088ed68990--srithinav.netlify.app/
+
 ## Overview
 
 This is my portfolio project showcasing my skills and projects as a Full Stack Developer. It features a modern and responsive design, allowing users to navigate through my work, skills,
