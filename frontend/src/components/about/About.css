@@ -1,0 +1,134 @@
+.about
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about h1{
+    font-size: 47px;
+    background: linear-gradient(270deg,#DF8908,#6a0dad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-container
+{
+    margin-top: 40PX;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+  
+}
+.about-container img
+{
+    width:25%;
+    border-radius: 18px;
+    border: 1px solid #6a0dad;
+}
+
+.about-content-text1
+{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    
+}
+
+.rating-container
+{
+    margin-top: 80px;
+   
+    /* margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+}
+.rating
+{
+    
+   display: flex;
+   align-items: center;
+   gap: 50px;
+   transition: 0.3s;
+}
+
+ .rating 
+ {
+    color: white;
+ }
+ .rating p 
+ {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 4px;
+ }
+ .rating hr
+ {
+    border:  none;
+    outline: none;
+    width: 50%;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #6a0dad 106.28%);
+
+ }
+
+ @media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        gap: 20px; /* Add spacing between elements */
+    }
+
+    .about-container img {
+        width: 70%; /* Adjust image width for smaller screens */
+    }
+
+    .about h1 {
+        font-size: 35px; /* Adjust heading font size for smaller screens */
+    }
+
+    .about-content-text1 {
+        font-size: 16px; /* Adjust paragraph font size for smaller screens */
+    }
+
+    .rating {
+        flex-direction: column; /* Stack rating elements vertically */
+        gap: 10px; /* Add spacing between rating elements */
+    }
+
+    .rating p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .rating hr {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Media Query for Even Smaller Screens */
+@media screen and (max-width: 480px) {
+    .about-container img {
+        width: 90%; /* Adjust image width for even smaller screens */
+    }
+
+    .about h1 {
+        font-size: 28px; /* Adjust heading font size for even smaller screens */
+    }
+
+    .about-content-text1 {
+        font-size: 14px; /* Adjust paragraph font size for even smaller screens */
+    }
+
+    .rating p {
+        font-size: 16px; /* Adjust font size for even smaller screens */
+    }
+
+    .rating hr {
+        width: 90%; /* Adjust width for even smaller screens */
+    }
+}

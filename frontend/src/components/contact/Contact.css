@@ -1,0 +1,111 @@
+.contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:20px
+}
+.contact h2
+{
+    background: linear-gradient(270deg,#DF8908,#6a0dad);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+}
+.contact-heading
+{
+    font-weight: 500;;
+}
+.contact-container
+{
+    color: white;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: self-start;
+
+}
+.contact-info
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-details
+{
+    display: flex;
+    
+    gap: 10px;
+}
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+.contact-form-details
+{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.contact-form-details p
+{
+   font-size: 20px;
+}
+
+.contact-form-details input, textarea
+{
+    background-color: #3b3a3a;
+    color: white;
+    flex-grow: 1;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 350px
+}
+.contact-form-details input:focus, textarea:focus
+{
+    outline: none;
+    border:1px solid #6a0dad;
+}
+.contact-form-details textarea
+{
+    height: 150px;
+}
+.contact-form button
+{
+    background-color: #6a0dad;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(242, 233, 249);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+        gap: 20px; /* Add spacing between elements */
+    }
+
+    .contact-form-details input, .contact-form-details textarea {
+        width: 300px;/* Adjust input width for smaller screens */
+    }
+}
+
+/* Media Query for Even Smaller Screens */
+@media screen and (max-width: 480px) {
+    .contact-form-details input, .contact-form-details textarea {
+        width: 300px; /* Adjust input width for even smaller screens */
+    }
+}

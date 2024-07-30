@@ -1,0 +1,107 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo
+{
+    color:white;
+}
+.menus
+{
+    background-color: #f9f9f9;
+    border-radius: 45px;
+    padding: 10px 60px 10px 60px;
+    transition: 0.2s;
+    border: 0.1px solid #6a0dad;
+    
+}
+
+.menus .menu-items
+{
+    
+    align-items: center;
+    color: #6a0dad;
+    font-family: Outfit,sans-serif;
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 20px;;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.menus .menu-items:hover
+{
+    padding: 0px 120px 0px 120px;
+    
+}
+
+.menus .menu-items:hover
+{
+   font-size: 23px;
+   font-weight: 500;
+}
+.connect-with-me button
+{
+    background-color: #f9f9f9;
+    border: 0.5px solid #6a0dad;
+    padding: 13px 20px 13px 20px;
+    border-radius: 50px;
+    font-family: Outfit,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6a0dad;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.connect-with-me button:hover
+{
+    background-color: #6a0dad;
+    color: #f9f9f9;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar h1
+    {
+        text-align: center;;
+    }
+
+    .connect-with-me button
+    {
+        display: none;;
+    }
+    .menus{
+        display: none;
+    }
+    .menus .menu-items
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar h1
+    {
+        text-align: center;;
+    }
+    .logo h1
+    {
+        text-align: center;
+    }
+    .connect-with-me button
+    {
+        display: none;;
+    }
+    .menus{
+        display: none;
+    }
+    .menus .menu-items
+    {
+        display: none;
+    }
+
+}

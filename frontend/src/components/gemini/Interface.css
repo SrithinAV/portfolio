@@ -1,0 +1,161 @@
+.interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interface-container {
+   
+    
+    border: 1px solid #6a0dad;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 460px;
+    width: 650px;
+    margin-top: 50px;
+    background-color: #282727;
+    border-radius: 10px;
+    left: 26%;
+    z-index: 1000;
+    color: white;
+    padding: 10px; /* Optional padding */
+    
+}
+
+.interface-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end;  */
+    height: 100%;
+    flex-grow: 1; /* Allow this container to grow */
+    gap: 20px; /* Adjust gap if necessary */
+}
+
+.interface-messages {
+    flex-grow: 1; /* Allow messages to take up available space */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.interface-messages-scroll
+{
+   
+    flex-grow: 1;
+    overflow-y: auto; 
+    padding: 10px;
+}
+
+.message-srithin{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 85%;
+    
+   
+}
+.message-srithin
+{
+    flex-shrink: 1;
+    padding: 10px;
+    border-radius: 10px; 
+
+}
+.message-user{
+    display: flex;
+    justify-content: flex-end;
+    align-items: self-start;
+    gap: 15px;
+    /* background-color: #3b3a3a;
+    flex-shrink: 1;
+    padding: 10px;
+    border-radius: 10px; */
+    padding: 10px;
+    
+}
+.message-user p
+{
+    background-color: #3b3a3a;
+    flex-shrink: 1;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+.interface-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interface-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3a3a;
+    color: white;
+}
+
+.interface-input input::placeholder {
+    color: #bbb;
+}
+
+.interface-input input:focus
+{
+    outline: none;
+    border:1px solid #6a0dad;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .interface-container {
+        width: 70%; /* Make the container wider on smaller screens */
+        left: 5%; /* Adjust left position for smaller screens */
+    }
+
+    .message-srithin {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .message-user p {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+    .interface-input
+    {
+       
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+    .interface-container {
+        width: 340px; /* Make the container wider on even smaller screens */
+        left: 2.5%; /* Adjust left position for even smaller screens */
+    }
+
+    .message-srithin {
+        width: 75%; /* Adjust width for even smaller screens */
+    }
+
+    .message-user p {
+        width: 75%; /* Adjust width for even smaller screens */
+    }
+    .interface-input
+    {
+      
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+}

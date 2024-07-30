@@ -1,0 +1,115 @@
+.services-container
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services-container h1
+{
+    background: linear-gradient(360deg, #DF8908 , #6a0dad );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 47px;
+}
+
+
+.services{
+    margin:120px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+    gap: 20px;
+}
+
+
+.services-card 
+{
+    border: 2px solid #6a0dad;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 40px;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.services-card p, .services-card h3
+{
+    
+    color: white;
+}
+
+.services-no
+{
+    font-weight: 500;
+    font-size: 30px;
+}
+.services-card h3.services-card-title { /* Added class */
+    font-size: 25px;
+    background: linear-gradient(360deg, #DF8908 , #6a0dad );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-card:hover h3.services-card-title { /* Target the class */
+    background: linear-gradient(360deg, #ffffff, #ffffff ); /* Reverse gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+.services-card:hover
+{
+    background-color: #6a0dad;
+    transition: 0.3s;
+    padding: 45px;
+    font-size: 18px;
+    color:white;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+
+    .services-card {
+        padding: 40px; /* Reduce padding for smaller screens */
+    }
+
+    .services-card h3.services-card-title {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .services-card p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media Query for Even Smaller Screens */
+@media screen and (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr 1fr; 
+        gap: 15px; /* Adjust gap for even smaller screens */
+    }
+
+    .services-card {
+        padding: 40px; /* Reduce padding for even smaller screens */
+    }
+
+    .services-card h3.services-card-title {
+        font-size: 26px; /* Adjust font size for even smaller screens */
+    }
+
+    .services-card p {
+        font-size: 12px; /* Adjust font size for even smaller screens */
+    }
+}

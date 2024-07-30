@@ -1,0 +1,104 @@
+.chat-icon {
+    position: fixed;
+    height: 450px;
+    margin-left: 90px;
+    font-size: 140px; /* Adjust the size as needed */
+    color:#6a0dad;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    z-index: 1000;
+  }
+
+  .chat-popup {
+    position: fixed;
+    top: 200px;
+    left: 180px;
+    margin-left: 160px;
+    color: white;;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #6a0dad;
+    padding: 15px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    animation: slideIn 0.5s ease-in-out; /* Add a slide-in animation */
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .arrow-icon
+  {
+    position: fixed;
+    height: 380px;
+    margin-left: 220px;
+    font-size: 100px; /* Adjust the size as needed */
+    color:#9c7eb0;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    z-index: 1000;
+    
+  }
+  /* .chat-popup button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+  /* Animation for slide-in effect */
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .chat-icon {
+      height: 300px; /* Adjust height for smaller screens */
+      font-size: 100px; /* Adjust font size for smaller screens */
+      margin-left: 50px; /* Adjust margin for smaller screens */
+    }
+
+    .chat-popup {
+      top: 150px; /* Adjust top position for smaller screens */
+      left: 50px; /* Adjust left position for smaller screens */
+      margin-left: 0; /* Remove extra margin for smaller screens */
+      width: 90%; /* Make the popup wider on smaller screens */
+    }
+
+    .arrow-icon {
+      height: 250px; /* Adjust height for smaller screens */
+      font-size: 70px; /* Adjust font size for smaller screens */
+      margin-left: 70px; /* Adjust margin for smaller screens */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .chat-icon {
+      height: 200px; /* Adjust height for even smaller screens */
+      font-size: 70px; /* Adjust font size for even smaller screens */
+      margin-left: 20px; /* Adjust margin for even smaller screens */
+    }
+
+    .chat-popup {
+      top: 100px; /* Adjust top position for even smaller screens */
+      left: 140px; /* Adjust left position for even smaller screens */
+      width: 30%; /* Make the popup wider on even smaller screens */
+    }
+
+    .arrow-icon {
+      height: 150px; /* Adjust height for even smaller screens */
+      font-size: 50px; /* Adjust font size for even smaller screens */
+      left: 30px; /* Adjust margin for even smaller screens */
+    }
+      .popup-content {
+       
+        font-size: 10px;
+      }
+  }
